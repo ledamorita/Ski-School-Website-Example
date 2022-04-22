@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/homepage.jpg');
+  position: absolute;
+  background-position: center;
+}
+
+.title {
+  font-size: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.meau_container {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.meau {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+}
+
+.meau:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.css">
+    <link rel="stylesheet" href="/src/sub-page/booking.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_container">
+       <form action="/dist/booking.js" id="appointment" class="form">
+          <h3>Book Your Lesson Here</h3>
+          <label>Date </label></br>
+          <input
+            id="date"
+            type="text"
+            class="input-area"
+            placeholder="Please selcet a date"
+            required
+          /></br>
+          <label>Time </label></br>
+          <input
+            id="time"
+            type="text"
+            class="input-area"
+            placeholder="Please selcet a time"
+            required
+          />
+          <button  type="submit" class="btn" onclick="appointment(event)">
+            Submit
+          </button>
+          <div id="result"></div> 
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.js"></script>
+    <script src="/dist/booking.js"></script>
+  </body>
+</html>

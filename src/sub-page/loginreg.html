@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN AND REG FORM</title>
+    <link rel="stylesheet" href="/src/sub-page/loginreg.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form_container">
+        <div class="button_group">
+          <div id="btn"></div>
+          <button type="button" class="switch-btn" onclick="loginBtnFun()">
+            LOG IN
+          </button>
+          <button type="button" class="switch-btn" onclick="regBtnFun()">
+            REGISTER
+          </button>
+        </div>
+        <form action="/dist/loginreg.js" id="login" class="form-group">
+          <input
+            id="le"
+            type="email"
+            class="input-area"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="lp"
+            type="password"
+            class="input-area"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" class="sub-btn" onclick="login(event)">
+            Submit
+          </button>
+        </form>
+        <form action="/dist/loginreg.js" id="register" class="form-group">
+          <input
+            id="re"
+            type="email"
+            class="input-area"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="rp"
+            type="password"
+            class="input-area"
+            placeholder="Password"
+            required
+          />
+          <input
+            id="rrp"
+            type="password"
+            class="input-area"
+            placeholder="Re write Password"
+            required
+          />
+
+          <button type="submit" class="sub-btn" onclick="register(event)">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="/dist/loginreg.js"></script>
+  </body>
+</html>

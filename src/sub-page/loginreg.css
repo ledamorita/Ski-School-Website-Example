@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/loginreg.jpg);
+  position: absolute;
+  background-position: center;
+}
+
+.form_container {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  margin: 10% auto;
+  background: whitesmoke;
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button_group {
+  width: 220px;
+  margin: 13% auto;
+  position: relative;
+  box-shadow: 0 0 10px 0px rgb(123, 122, 158);
+  border-radius: 30px;
+}
+
+.switch-btn {
+  padding: 11px 21px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(
+    rgb(65, 173, 223),
+    rgba(13, 98, 196, 0.459),
+    rgb(65, 173, 223)
+  );
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.form-group {
+  position: absolute;
+  top: 120px;
+  width: 250px;
+  transition: 0.5s;
+}
+
+.input-area {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid blue;
+  outline: none;
+  background: transparent;
+}
+
+.sub-btn {
+  width: 80%;
+  padding: 15px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 15% auto;
+  background: rgb(65, 173, 223);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 500px;
+}
